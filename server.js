@@ -8,10 +8,6 @@ app.set('view engine', 'ejs');
 app.use(express.static('public'));
 app.use(express.static('public/img'));
 app.use(express.static('public/css'));
-
-app.use('/', require('./routes/root.js'));
-app.use('/login', require('./routes/login.js'));
-app.use('/register', require('./routes/register.js'));
 //problem is solved
 
 app.listen(PORT, () => {
