@@ -12,7 +12,7 @@ app.use(express.static('public/css'));
 app.use('/', require('./routes/root.js'));
 app.use('/login', require('./routes/login.js'));
 app.use('/register', require('./routes/register.js'));
-let a = 7;
+//problem is solved
 
 app.listen(PORT, () => {
     console.log(`Running on localhost ${PORT}`);
